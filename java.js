@@ -20,3 +20,15 @@ alert(`Anda sudah membeli Apel sebanyak ${inputApel} buah, lalu Anggur sebanyak 
 dan membeli Jeruk sebanyak ${inputJeruk} buah, Jadi total harga untuk \n
 apel adalah Rp.${totalHargaApel},00 Anggur Rp.${totalHargaAnggur},00 dan Jeruk Rp.${totalHargaJeruk},00 \n
 Jadi Total Harga yang harus anda Bayar adalah Rp.${hargaTotal},00`)
+
+let inputHarga = prompt("masukan jumlah uang anda")
+let hutang = hargaTotal - inputHarga
+let uangKemballian = inputHarga - hargaTotal
+
+if (inputHarga < hargaTotal) {
+    alert(`TRANSAKSI DIBATALKAN!, dana anda masih kurang ${hutang}`)}
+     else if( inputHarga > hargaTotal)
+    {alert(`Terimakasih, Uang kembalian anda adalah ${uangKemballian}`)}
+    else {alert(`TerimaKasih :)`)}
+   
+
